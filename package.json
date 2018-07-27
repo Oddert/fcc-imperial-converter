@@ -1,0 +1,19 @@
+{
+  "name": "fcc-imperial-converter",
+  "version": "1.0.0",
+  "description": "A unit converter api built for the free code camp challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robyn Veitch",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oddert/fcc-imperial-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Oddert/fcc-imperial-converter/issues"
+  },
+  "homepage": "https://github.com/Oddert/fcc-imperial-converter#readme"
+}
