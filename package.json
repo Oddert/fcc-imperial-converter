@@ -1,19 +1,28 @@
 {
-  "name": "fcc-imperial-converter",
-  "version": "1.0.0",
-  "description": "A unit converter api built for the free code camp challenge",
-  "main": "index.js",
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "hello-express",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "Robyn Veitch",
-  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "helmet": "^3.13.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Oddert/fcc-imperial-converter.git"
+    "url": "https://glitch.com/edit/#!/hello-express"
   },
-  "bugs": {
-    "url": "https://github.com/Oddert/fcc-imperial-converter/issues"
-  },
-  "homepage": "https://github.com/Oddert/fcc-imperial-converter#readme"
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
