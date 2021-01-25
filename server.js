@@ -82,7 +82,7 @@ app.get('/api/convert', (req, res) => {
       break;
     case "MI":
       console.log('Converting to: km');
-      returnUnit = "kg";
+      returnUnit = "km";
       returnNum = parseFloat(Number(initNum) / 0.62137).toFixed(5);
       break;
     case "KM":
@@ -112,6 +112,6 @@ app.get('/api/convert', (req, res) => {
   
 })
 
-var listener = app.listen(process.env.PORT, function() {
+var listener = app.listen(process.env.PORT || 8080, function() {
   console.log('Your app is listening on port ' + listener.address().port);
 });

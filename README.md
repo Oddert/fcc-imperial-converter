@@ -1,42 +1,44 @@
-Welcome to Glitch
-=================
+# Imperial Unit Converter
 
-Relevant Links
---------------
+A lightweight URL-based unit converter microservice for the FreeCodeCamp project.
 
-[Local Auth](https://glitch.com/edit/#!/odd-yacht?path=server.js:1:13)
+## Live Demo
+[https://deciduous-blossom-silk.glitch.me/](https://deciduous-blossom-silk.glitch.me/)
 
-[Socket.io Auth](https://glitch.com/edit/#!/candy-bone?path=server.js:12:30)
+## Installation
+```
+$ git clone https://github.com/Oddert/fcc-imperial-converter.git
+$ cd fcc-imperial-converter
+$ npm i
+```
+### For development
+```
+$ npm run dev
+```
+### For a production build
+```
+$ npm start
+```
 
-[Github Auth](https://glitch.com/edit/#!/gem-celery?path=server.js:1:0)
+## Scripts
+| script | command                                        | action
+|--------|------------------------------------------------|------------------------------------------------|
+| start  | node app.js                                    | runs the server                                |
+| server | nodemon app.js                                 | runs the server with auto restart              |
 
-[Helmet](https://glitch.com/edit/#!/water-sturgeon?path=myApp.js:11:0)
+# Routes
+| Route  | Method | Query | Returns
+|--------|--------|------|----------|
+| /  | GET |  | returns a basic html page to interact with the API |
+| /api-convert | GET | input: any valid value followed by a unit supported bellow | JSON object with the unit conversions |
+---
 
-[BCrypt](https://glitch.com/edit/#!/immense-watch?path=server.js:1:0)
+- Units are case insensitive and paried with a return value, e.g passing ` ?input=528 gal ` will return ` 1998.69742L `.
 
-
-
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+# Supported Unites
+- Gallon to Liter (GAL, L)
+- Liter to Gallon (L, GAL)
+- LBS to Killograms (LBS, KG)
+- Killograms to LBS (KG, LBS)
+- Miles to Killometers (MI, KM)
+- Killometers to Miles (KM, MI)
