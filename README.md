@@ -35,7 +35,7 @@ $ npm start
 
 - Units are case insensitive and paried with a return value, e.g passing ` ?input=528 gal ` will return ` 1998.69742L `.
 
-# Supported Unites
+# Supported Units
 - Gallon to Liter (GAL, L)
 - Liter to Gallon (L, GAL)
 - LBS to Killograms (LBS, KG)
